@@ -1,0 +1,198 @@
+*{     
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: gilroy;
+    /* //declared globally */
+}
+html,body{
+height: 100%;
+width: 100% ;
+}
+#main{
+    position: relative;
+    overflow: hidden;
+}
+#page{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color:whitesmoke;
+}
+#page1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color:whitesmoke;
+}
+#page2{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color:whitesmoke;}
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color:whitesmoke;
+}
+canvas{
+    position: relative;
+    z-index: 9;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+#loop{
+    display: flex;
+    position:absolute;
+    top: 35%;
+    height:25%;
+    width:100%;
+    /* background-color: green; */
+    font-size: 95px; ;
+    white-space:nowrap;
+    font-family: gilroy;
+}
+#loop>h1{
+font-weight:400;
+animation-name: anim;
+animation-duration: 17s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+font-size: 150px;
+
+}
+#loop>h1>span{
+    -webkit-text-stroke: 2px black; 
+    /* //text ke border ke liye hai ye */
+    color: transparent;
+    font-weight: 500;
+}
+@keyframes anim{
+    0%{
+        transform:translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7%;
+    width: 100%;
+    position: fixed;
+    /* background-color: blue; */
+    z-index: 9;
+    padding: 0px 30px;
+}
+#nav>h3{
+    font-family: gilroy;
+    font-weight: 400;
+    font-size: 22px;
+}
+#nav>button{
+    padding: 10px 20px;
+    font-family: gilroy;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    background-color: black;
+}
+#page>h3{
+    position: absolute;
+    top: 60%;
+    font-family: gilroy;
+    font-weight:400;
+    color: rgb(189, 188, 188);
+    left: 5.5%;
+    font-size: 16px;
+
+}
+#page>h4{
+    position: absolute;
+    top: 97%;
+    left:90%;
+    font-weight: 500;
+    z-index: 9;
+    color: rgb(204, 199, 199);
+    font-family: gilroy;
+
+}
+#page>hx{
+    position: absolute;
+    top: 60%;
+    font-family: gilroy;
+    font-weight:400;
+    color: rgb(189, 188, 188);
+    left: 59%;
+    font-size: 16px;
+}
+#page1>#right-text{
+    top: 40%;
+    position: absolute;
+    left:5%;
+
+}
+#page1>#right-text>h3{
+    font-weight: 500;
+    color: rgb(189, 188, 188);
+    font-size: 20px;
+}
+#page1>#right-text>h1{
+    line-height: 1.2;
+    font-size: 40px;
+}
+#page1>#left-text{
+position: absolute;
+top: 50%;
+right: 5%;
+text-align: end;
+}
+#page1>#left-text>h3{
+    font-weight: 500;
+    color: rgb(189, 188, 188);
+    font-size: 20px;
+}
+#page1>#left-text>h1{
+    line-height: 1.2;
+    font-size: 40px;
+}
+#page2>#text1{
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+#page2>#text1>h3{
+    color: rgb(189, 188, 188);
+    font-weight: 400;
+}
+#page2>#text1>h1{
+    font-size: 60px;
+    line-height: 1;
+}
+#page2>#text2{
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  text-align: end;
+}
+#page2>#text2>p{
+    color: rgb(189, 188, 188);
+ font-weight: 500;
+}
+#page3>#text3{
+  position: absolute;
+  top: 35%;
+  right: 7%; 
+  text-align: end;
+}
+#page3>#text3>h1{
+    font-size: 60px;
+    line-height: 1;
+}
+#page3>#text3>h3{
+    color: rgb(189, 188, 188);
+    font-weight: 400;
+}
